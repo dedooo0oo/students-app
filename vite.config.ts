@@ -4,6 +4,7 @@
   import path from 'path';
 
   export default defineConfig({
+    base: '/students-app/',
     plugins: [react()],
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
@@ -50,7 +51,7 @@
     },
     build: {
       target: 'esnext',
-      outDir: 'build',
+      outDir: 'build', // La cartella che conterrà i file pronti per il deploy
     },
     server: {
       port: 3000,
